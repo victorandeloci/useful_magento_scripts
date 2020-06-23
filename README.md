@@ -4,10 +4,10 @@ Useful scripts to import/export/assign things in Magento
 ## About
 I've used and tested this in Magento 1.9. Take care.
 
-**I've not created all of this just by myself.** These scripts were created based on old scripts provided by (rafaldimas)[https://github.com/rafaeldimas] and questions, like following: 
-* (https://stackoverflow.com/questions/28350783/how-to-replace-the-sku-number-for-5000-products-in-magento)[https://stackoverflow.com/questions/28350783/how-to-replace-the-sku-number-for-5000-products-in-magento]
+**I've not created all of this just by myself.** These scripts were created based on old scripts provided by [rafaldimas](https://github.com/rafaeldimas) and questions, like following: 
+* [https://stackoverflow.com/questions/28350783/how-to-replace-the-sku-number-for-5000-products-in-magento](https://stackoverflow.com/questions/28350783/how-to-replace-the-sku-number-for-5000-products-in-magento)
 
-##Usage
+## Usage
 
 #### Alter order status with comment
 
