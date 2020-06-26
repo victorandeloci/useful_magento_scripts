@@ -10,7 +10,7 @@
     if($updates_handle) {
         while($sku_entry = fgetcsv($updates_handle, 1000, ",")) {
             $sku = $sku_entry[0];
-            echo "<br>Updating category of " . $sku . " - ";
+            echo "<br>Updating website of " . $sku . " - ";
             try {
                 $get_item = Mage::getModel('catalog/product')->loadByAttribute('sku', $sku);
                 if ($get_item) {
