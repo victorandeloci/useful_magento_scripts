@@ -56,3 +56,20 @@ $categories = array(2, 136, 470);
 ```
 
 5. Access *YOUR_SITE.XYZ/category_assign.php*
+
+#### Assign Websites ids to product mass
+
+1. Use the <code>websites_assign.csv</code> model. 
+* First column for your SKUs
+
+2. Upload the *.csv* file to <code>/var/export</code> directory
+
+3. Upload the script file <code>website_assign.php</code> to your root directory
+
+4. Put the category ids in the respective array in <code>website_assign.php</code>:
+
+```php
+$categories = array(2, 136, 470);
+```
+
+5. Access *YOUR_SITE.XYZ/category_assign.php*
