@@ -31,8 +31,8 @@ $order->addStatusToHistory('complete_shipped', 'Status comment');
 #### Update SKU (Old SKU to new SKU) by import
 
 1. Use the <code>sku2sku.csv</code> model. 
-** First column for your old SKUs
-** Second column for your new SKUs
+* First column for your old SKUs
+* Second column for your new SKUs
 
 2. Upload the *.csv* file to <code>/var/export</code> directory
 
@@ -43,7 +43,7 @@ $order->addStatusToHistory('complete_shipped', 'Status comment');
 #### Assign category ids to product mass
 
 1. Use the <code>category_assign.csv</code> model. 
-** First column for your SKUs
+* First column for your SKUs
 
 2. Upload the *.csv* file to <code>/var/export</code> directory
 
