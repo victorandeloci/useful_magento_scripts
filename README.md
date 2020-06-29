@@ -66,10 +66,10 @@ $categories = array(2, 136, 470);
 
 3. Upload the script file <code>website_assign.php</code> to your root directory
 
-4. Put the category ids in the respective array in <code>website_assign.php</code>:
+4. Put the website ids in the respective array in <code>website_assign.php</code>:
 
 ```php
-$categories = array(2, 136, 470);
+$websites = array(1, 2);
 ```
 
 5. Access *YOUR_SITE.XYZ/website_assign.php*
