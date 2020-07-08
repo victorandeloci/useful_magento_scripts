@@ -2,8 +2,8 @@
     include_once './app/Mage.php';
     Mage::app()->setCurrentStore(Mage_Core_Model_App::ADMIN_STORE_ID);
 
-    $updates_file = "./var/export/category_assign.csv";
-	$websites = array(2, 136, 470);
+    $updates_file = "./var/export/website_assign.csv";
+	$websites = array(1, 2);
 	
     $sku_entry = array();
     $updates_handle = fopen($updates_file, 'r');
