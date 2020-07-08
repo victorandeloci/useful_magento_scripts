@@ -1,10 +1,10 @@
 # useful_magento_scripts
-Useful scripts to import/export/assign things in Magento 
+Useful scripts to import/export/assign things in Magento
 
 ## About
 I've used and tested this in Magento 1.9. Take care.
 
-**I've not created all of this just by myself.** These scripts were created based on old scripts provided by [rafaldimas](https://github.com/rafaeldimas) and questions, like following: 
+**I've not created all of this just by myself.** These scripts were created based on old scripts provided by [rafaldimas](https://github.com/rafaeldimas) and questions, like following:
 * [https://stackoverflow.com/questions/28350783/how-to-replace-the-sku-number-for-5000-products-in-magento](https://stackoverflow.com/questions/28350783/how-to-replace-the-sku-number-for-5000-products-in-magento)
 
 ## Usage
@@ -20,7 +20,7 @@ $ordersIds = array(
 );
 ```
 
-2. Then, add the status slug and comment: 
+2. Then, add the status slug and comment:
 
 ```php
 $order->addStatusToHistory('complete_shipped', 'Status comment');
@@ -30,7 +30,7 @@ $order->addStatusToHistory('complete_shipped', 'Status comment');
 
 #### Update SKU (Old SKU to new SKU) by import
 
-1. Use the <code>sku2sku.csv</code> model. 
+1. Use the <code>sku2sku.csv</code> model.
 * First column for your old SKUs
 * Second column for your new SKUs
 
@@ -42,7 +42,7 @@ $order->addStatusToHistory('complete_shipped', 'Status comment');
 
 #### Assign category ids to product mass
 
-1. Use the <code>category_assign.csv</code> model. 
+1. Use the <code>category_assign.csv</code> model.
 * First column for your SKUs
 
 2. Upload the *.csv* file to <code>/var/export</code> directory
@@ -59,7 +59,7 @@ $categories = array(2, 136, 470);
 
 #### Assign Websites ids to product mass
 
-1. Use the <code>website_assign.csv</code> model. 
+1. Use the <code>website_assign.csv</code> model.
 * First column for your SKUs
 
 2. Upload the *.csv* file to <code>/var/export</code> directory
@@ -73,3 +73,15 @@ $websites = array(1, 2);
 ```
 
 5. Access *YOUR_SITE.XYZ/website_assign.php*
+
+#### Get payment methods codes from store
+
+1. Change the **$storeId** in <code>get_payment_methods_codes.php</code> tou YOUR store id:
+
+```php
+$storeId = 1;
+```
+
+2. Upload the script file <code>get_payment_methods_codes.php</code> to your root directory
+
+3. Access *YOUR_SITE.XYZ/get_payment_methods_codes.php*
