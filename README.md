@@ -85,3 +85,14 @@ $storeId = 1;
 2. Upload the script file <code>get_payment_methods_codes.php</code> to your root directory
 
 3. Access *YOUR_SITE.XYZ/get_payment_methods_codes.php*
+
+#### Disable products by SKU in ALL store views
+
+1. Use the <code>disable_products_by_sku.csv</code> model.
+* First column for your SKUs
+
+2. Upload the *.csv* file to <code>/var/export</code> directory
+
+3. Upload the script file <code>disable_products_by_sku.php</code> to your root directory
+
+4. Access *YOUR_SITE.XYZ/disable_products_by_sku.php*
