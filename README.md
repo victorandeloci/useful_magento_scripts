@@ -96,3 +96,15 @@ $storeId = 1;
 3. Upload the script file <code>disable_products_by_sku.php</code> to your root directory
 
 4. Access *YOUR_SITE.XYZ/disable_products_by_sku.php*
+
+#### Set attribute value by attributte name for ALL PRODUCTS
+
+1. Use the <code>set_attributes.csv</code> model.
+* First column for your attribute names
+* Second column form their values
+
+2. Upload the *.csv* file to <code>/var/export</code> directory
+
+3. Upload the script file <code>set_attributes.php</code> to your root directory
+
+4. Access *YOUR_SITE.XYZ/set_attributes.php*
