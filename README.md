@@ -108,3 +108,28 @@ $storeId = 1;
 3. Upload the script file <code>set_attributes.php</code> to your root directory
 
 4. Access *YOUR_SITE.XYZ/set_attributes.php*
+
+#### Change status of orders between dates
+
+1. Upload the script file <code>update_orders_status.php</code> to your root directory
+
+2. Set your date interval:
+```php
+$from = new DateTime('2020-01-01 00:00:00');
+$from = $from->format('Y-m-d H:i:s');
+
+$to = new DateTime('2020-12-22 23:59:9');
+$to = $to->format('Y-m-d H:i:s');
+```
+
+3. Define your current order status for search:
+```php
+->addFieldToFilter('status', 'complete_shipped')
+```
+
+4. Define the final status: 
+```php
+$order->addStatusToHistory('complete', 'Status alterado manualmente no dia ' . date("d - m - Y") . '.');
+```
+
+5. Access *YOUR_SITE.XYZ/update_orders_status.php*
