@@ -127,9 +127,9 @@ $to = $to->format('Y-m-d H:i:s');
 ->addFieldToFilter('status', 'complete_shipped')
 ```
 
-4. Define the final status: 
+4. Define the final status:
 ```php
-$order->addStatusToHistory('complete', 'Status alterado manualmente no dia ' . date("d - m - Y") . '.');
+$order->addStatusToHistory('complete', 'Status manually updated on ' . date("d - m - Y") . '.');
 ```
 
 5. Access *YOUR_SITE.XYZ/update_orders_status.php*

@@ -13,10 +13,10 @@ $orders = Mage::getModel('sales/order')->getCollection()
     ->addFieldToFilter('status', 'complete_shipped')
     ->addAttributeToFilter('created_at', array('from'=>$from, 'to'=>$to));
 foreach ($orders as $order) {
-  echo 'Atualizando status do pedido ' . $order->getId() . '<br>';
-  $order->addStatusToHistory('complete', 'Status alterado manualmente no dia ' . date("d - m - Y") . '.');
+  echo 'Updating status of order ' . $order->getId() . '<br>';
+  $order->addStatusToHistory('complete', 'Status manually updated on ' . date("d - m - Y") . '.');
   $order->save();
-  echo '--- Atualizado com sucesso! --- <br><br>';
+  echo '----- Succedeed! ----- <br><br>';
 }
 
 exit();
